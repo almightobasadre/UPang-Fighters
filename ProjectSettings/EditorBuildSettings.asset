@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/UFE/Demos/_2DFighter/UPang Fighters.unity
+    path: Assets/App/UPang Fighters.unity
     guid: 2da2a2a361d0c47448737c8dba1b8b78
   - enabled: 1
-    path: Assets/UFE/Demos/Shared_Assets/Stages/TrainingRoom2D/TrainingRoom.unity
+    path: Assets/App/Stages/PracticeRoom/PracticeRoom.unity
     guid: 932678a643abbec4394ad92242da150f
   m_configObjects: {}
