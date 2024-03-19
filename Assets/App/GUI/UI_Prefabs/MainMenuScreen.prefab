@@ -503,7 +503,7 @@ MonoBehaviour:
   hasFadeOut: 1
   wrapInput: 1
   onLoadSound: {fileID: 0}
-  music: {fileID: 8300000, guid: f677a794af65dfe46917f53cc9810eec, type: 3}
+  music: {fileID: 8300000, guid: c8234e50bd4eee749918a07cc1532430, type: 3}
   selectSound: {fileID: 8300000, guid: 51afa2d593bb4db438247ff64dadf46d, type: 3}
   cancelSound: {fileID: 8300000, guid: 681d218d3074955459d3e17a1a14f85f, type: 3}
   moveCursorSound: {fileID: 8300000, guid: e33073cf85d1edf4d992c2f5c6a33c90, type: 3}
@@ -2177,7 +2177,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -185}
+  m_AnchoredPosition: {x: 0, y: -136}
   m_SizeDelta: {x: 1344, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3929331397364493022

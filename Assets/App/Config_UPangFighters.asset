@@ -29,7 +29,7 @@ MonoBehaviour:
     stagePath: 
     screenshot: {fileID: 2800000, guid: bf445bc92e16752458412872ce47503a, type: 3}
     prefab: {fileID: 100000, guid: daecac46635db5d42af731247e5d544d, type: 3}
-    music: {fileID: 0}
+    music: {fileID: 8300000, guid: 67ecd5df5486b7d4d902c5e699218c97, type: 3}
     _groundFriction:
       _serializedValue: 429496729600
     _leftBoundary:
@@ -869,7 +869,7 @@ MonoBehaviour:
     inputViewerIcon6: {fileID: 2800000, guid: 90523496d8897124e989ad256f109d27, type: 3}
   - inputType: 1
     inputButtonName: P1KeyboardVertical
-    engineRelatedButton: 3
+    engineRelatedButton: 2
     joystickAxisName: P1JoystickVertical
     cInputPositiveKeyName: P1Up
     cInputPositiveDefaultKey: W
@@ -1160,7 +1160,7 @@ MonoBehaviour:
     stagePath: 
     screenshot: {fileID: 2800000, guid: bf445bc92e16752458412872ce47503a, type: 3}
     prefab: {fileID: 100000, guid: daecac46635db5d42af731247e5d544d, type: 3}
-    music: {fileID: 0}
+    music: {fileID: 8300000, guid: 67ecd5df5486b7d4d902c5e699218c97, type: 3}
     _groundFriction:
       _serializedValue: 429496729600
     _leftBoundary:
@@ -1179,7 +1179,7 @@ MonoBehaviour:
     stagePath: 
     screenshot: {fileID: 2800000, guid: 0f8a6ff1146f95f4c8330d73e9ed7e26, type: 3}
     prefab: {fileID: 100000, guid: daf8431d920798e46b40660d63c2ddf7, type: 3}
-    music: {fileID: 8300000, guid: 23d573990eb71984db6595c0ac5ac4c1, type: 3}
+    music: {fileID: 8300000, guid: 0c210f1db5a94d04b80088da81aebfdc, type: 3}
     _groundFriction:
       _serializedValue: 429496729600
     _leftBoundary:
@@ -1198,7 +1198,7 @@ MonoBehaviour:
     stagePath: 
     screenshot: {fileID: 2800000, guid: 10a4a95428b389a4bb887fac37d8e9d7, type: 3}
     prefab: {fileID: 100000, guid: 8aa36686f367cf142b20c8da5460d334, type: 3}
-    music: {fileID: 8300000, guid: 23d573990eb71984db6595c0ac5ac4c1, type: 3}
+    music: {fileID: 8300000, guid: 8b6802f3855252e4aa8f174bbe4fa6bd, type: 3}
     _groundFriction:
       _serializedValue: 429496729600
     _leftBoundary:
@@ -1217,7 +1217,7 @@ MonoBehaviour:
     stagePath: 
     screenshot: {fileID: 2800000, guid: b7bf9ed435d280c4086971aef06d7a55, type: 3}
     prefab: {fileID: 100000, guid: 54af3bec4f17171409821922bf43fb40, type: 3}
-    music: {fileID: 8300000, guid: 23d573990eb71984db6595c0ac5ac4c1, type: 3}
+    music: {fileID: 8300000, guid: 2cacb356f7d1bed478992bf8863529fd, type: 3}
     _groundFriction:
       _serializedValue: 429496729600
     _leftBoundary:
