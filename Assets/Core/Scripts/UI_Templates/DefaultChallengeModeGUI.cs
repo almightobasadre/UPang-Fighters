@@ -10,8 +10,8 @@ public class DefaultChallengeModeGUI : ChallengeMode
         if (!complete && !UFE.config.lockInputs && !UFE.config.lockMovements)
         {
             GUI.skin.label.fontSize = 30;
-            // GUI.Box(new Rect(70, 170, 320, 170), UFE.GetChallenge(currentChallenge).challengeName);
-            GUI.BeginGroup(new Rect(90, 230, 320, 400));
+            //GUI.Box(new Rect(70, 170, 320, 170), UFE.GetChallenge(currentChallenge).challengeName);
+            GUI.BeginGroup(new Rect(90, 230, 1000, 500));
             {
                 if (UFE.GetChallenge(currentChallenge).description == "%list%")
                 {
@@ -29,7 +29,15 @@ public class DefaultChallengeModeGUI : ChallengeMode
                 }
                 else
                 {
-                    GUILayout.Label(UFE.GetChallenge(currentChallenge).description);
+                    GUIStyle style = new GUIStyle(GUI.skin.label);
+                    style.fontSize = 55;
+                    style.normal.textColor = Color.green; 
+                    Font customFont = (Font)Resources.Load("RedFive", typeof(Font));
+                    if (customFont != null)
+                    {
+                        style.font = customFont; // Assign the custom font to the style
+                    }
+                    GUILayout.Label(UFE.GetChallenge(currentChallenge).description, style);
                 }
             }
             GUI.EndGroup();
