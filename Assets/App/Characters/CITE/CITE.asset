@@ -5540,7 +5540,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5e267afc5cf634646b149bbcd0a5747a, type: 2}
     - {fileID: 11400000, guid: d622fadfa722f3c4689fcc68dd7700ec, type: 2}
     - {fileID: 11400000, guid: b40e1eafa6801034196eaed27d41f3ba, type: 2}
-    enabledBasicMovesToggle: 0
+    enabledBasicMovesToggle: 1
     basicMovesToggle: 1
     attackMovesToggle: 1
   aiInstructionsSet:

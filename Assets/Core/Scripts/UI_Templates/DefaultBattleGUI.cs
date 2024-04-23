@@ -666,8 +666,19 @@ public class DefaultBattleGUI : BattleGUI{
 		PlayerGUI winnerGUI = winnerPlayer == 1 ? this.player1GUI : this.player2GUI;
 		PlayerGUI loserGUI = loserPlayer == 1 ? this.player1GUI : this.player2GUI;
 
-		// Then update the "Won Rounds" sprites...
-		if (this.wonRounds.NotFinishedRounds == null){
+		if (winnerPlayer == 1)
+		{
+            PlayerPrefs.SetInt("Wins", PlayerPrefs.GetInt("Wins", 0) + 1);
+        }
+		else if (winnerPlayer == 2)
+		{
+            PlayerPrefs.SetInt("Loss", PlayerPrefs.GetInt("Loss", 0) + 1);
+        }
+
+		PlayerPrefs.Save();
+
+        // Then update the "Won Rounds" sprites...
+        if (this.wonRounds.NotFinishedRounds == null){
 			Debug.LogError("\"Not Finished Rounds\" Sprite not found! Make sure you have set the sprite correctly in the Editor");
 		}else if (this.wonRounds.WonRounds == null){
 			Debug.LogError("\"Won Rounds\" Sprite not found! Make sure you have set the sprite correctly in the Editor");
@@ -732,7 +743,7 @@ public class DefaultBattleGUI : BattleGUI{
 				}else{
 					UFE.PlaySound(this.announcer.player2Wins);
 				}
-			}
+            }
 
 			// Finally, check if we should play any AudioClip
 			if (winner.currentLifePoints == winner.myInfo.lifePoints){

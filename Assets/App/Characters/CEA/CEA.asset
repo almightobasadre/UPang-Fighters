@@ -4147,7 +4147,7 @@ MonoBehaviour:
           hitBoxDefinitionIndex: 0
         reference: 0
         name: 
-        editorToggle: 0
+        editorToggle: 1
         soundEffectsToggle: 0
       getHitCrumple:
         animMap:
@@ -5538,7 +5538,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 31ffde572467bc046b0900d3fd139f81, type: 2}
     - {fileID: 11400000, guid: 09dbd42eecba06a418846b3ab67e735f, type: 2}
     enabledBasicMovesToggle: 0
-    basicMovesToggle: 0
+    basicMovesToggle: 1
     attackMovesToggle: 1
   aiInstructionsSet:
   - aiInfo: {fileID: 11400000, guid: 194d8c5ad8534c040aa61e79540c24de, type: 2}

@@ -15,7 +15,7 @@ MonoBehaviour:
   gameplayType: 0
   profilePictureSmall: {fileID: 2800000, guid: 7bf07de2262f3bb449b0c4eb89241f2a, type: 3}
   profilePictureBig: {fileID: 2800000, guid: c3fb5cf5649354540b5215160ed1342c, type: 3}
-  characterName: Techie
+  characterName: Mentor
   gender: 0
   characterDescription: 
   selectionAnimation: {fileID: 0}
@@ -27,7 +27,7 @@ MonoBehaviour:
   lifePoints: 1000
   maxGaugePoints: 0
   characterPrefabStorage: 0
-  characterPrefab: {fileID: 4715597983913783129, guid: d606c4c86dfbf2f4aa1917935daf35ae,
+  characterPrefab: {fileID: 4715597983913783129, guid: b23640850b565a6429b4dea1eee35a1f,
     type: 3}
   prefabResourcePath: 
   alternativeCostumes: []
@@ -5540,7 +5540,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 404e573b2e2dfd64b95deb74b0be006b, type: 2}
     - {fileID: 11400000, guid: 6429827222c70664e82159ecf486c8a1, type: 2}
     enabledBasicMovesToggle: 0
-    basicMovesToggle: 1
+    basicMovesToggle: 0
     attackMovesToggle: 1
   aiInstructionsSet:
   - aiInfo: {fileID: 11400000, guid: 194d8c5ad8534c040aa61e79540c24de, type: 2}

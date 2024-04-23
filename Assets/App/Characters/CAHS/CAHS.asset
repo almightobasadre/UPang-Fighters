@@ -74,7 +74,7 @@ MonoBehaviour:
     cumulativeForce: 1
     multiJumps: 1
     _weight:
-      _serializedValue: 1632087572480
+      _serializedValue: 1546188226560
     jumpDelay: 8
     landingDelay: 7
     _groundCollisionMass:

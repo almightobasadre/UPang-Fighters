@@ -20,6 +20,7 @@ namespace UFE3D
         public MainMenuScreen mainMenuScreen;
         public OptionsScreen optionsScreen;
         public CreditsScreen creditsScreen;
+        public RecordScreen recordScreen;
         public PauseScreen pauseScreen;
 
         public CharacterSelectionScreen characterSelectionScreen;

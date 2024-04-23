@@ -654,7 +654,12 @@ public class UFE : MonoBehaviour, UFEInterface
 		return UFE.config.gameGUI.creditsScreen;
 	}
 
-	public static HostGameScreen GetHostGameScreen(){
+    public static RecordScreen GetRecordScreen()
+    {
+        return UFE.config.gameGUI.recordScreen;
+    }
+
+    public static HostGameScreen GetHostGameScreen(){
 		return UFE.config.gameGUI.hostGameScreen;
 	}
 
@@ -879,7 +884,31 @@ public class UFE : MonoBehaviour, UFEInterface
         }
 	}
 
-	public static void StartGame(){
+    public static void StartRecordScreen()
+    {
+        UFE.StartRecordScreen((float)UFE.config.gameGUI.screenFadeDuration);
+    }
+
+    public static void StartRecordScreen(float fadeTime)
+    {
+        if (UFE.currentScreen.hasFadeOut)
+        {
+            UFE.eventSystem.enabled = false;
+            CameraFade.StartAlphaFade(
+                UFE.config.gameGUI.screenFadeColor,
+                false,
+                fadeTime / 2f,
+                0f
+            );
+            UFE.DelayLocalAction(() => { UFE.eventSystem.enabled = true; UFE._StartRecordScreen(fadeTime / 2f); }, (Fix64)fadeTime / 2);
+        }
+        else
+        {
+            UFE._StartRecordScreen(fadeTime / 2f);
+        }
+    }
+
+    public static void StartGame(){
 		UFE.StartGame((float)UFE.config.gameGUI.screenFadeDuration);
 	}
 
@@ -2938,7 +2967,22 @@ public class UFE : MonoBehaviour, UFEInterface
 		}
 	}
 
-	private static void _StartConnectionLostScreen(float fadeTime){
+    private static void _StartRecordScreen(float fadeTime)
+    {
+        UFE.HideScreen(UFE.currentScreen);
+        if (UFE.config.gameGUI.recordScreen == null)
+        {
+            Debug.Log("Record screen not found! Make sure you have set the prefab correctly in the Global Editor");
+        }
+        else
+        {
+            UFE.ShowScreen(UFE.config.gameGUI.recordScreen);
+            if (!UFE.config.gameGUI.recordScreen.hasFadeIn) fadeTime = 0;
+            CameraFade.StartAlphaFade(UFE.config.gameGUI.screenFadeColor, true, fadeTime);
+        }
+    }
+
+    private static void _StartConnectionLostScreen(float fadeTime){
 		UFE.EnsureNetworkDisconnection();
 
 		UFE.HideScreen(UFE.currentScreen);

@@ -9,6 +9,7 @@ namespace UFE3D
         public string start = "Start";
         public string options = "Options";
         public string credits = "Credits";
+        public string record = "Record";
         public string selectYourCharacter = "Select Your Character";
         public string selectYourStage = "Select Your Stage";
         public string round = "Round %round%";
