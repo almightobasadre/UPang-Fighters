@@ -777,7 +777,8 @@ public class GlobalEditorWindow : EditorWindow {
 								globalInfo.languages[i].start = EditorGUILayout.TextField("Start:", globalInfo.languages[i].start);
 								globalInfo.languages[i].options = EditorGUILayout.TextField("Options:", globalInfo.languages[i].options);
 								globalInfo.languages[i].credits = EditorGUILayout.TextField("Credits:", globalInfo.languages[i].credits);
-								globalInfo.languages[i].selectYourCharacter = EditorGUILayout.TextField("Select Your Character:", globalInfo.languages[i].selectYourCharacter);
+                                globalInfo.languages[i].record = EditorGUILayout.TextField("Record:", globalInfo.languages[i].record);
+                                globalInfo.languages[i].selectYourCharacter = EditorGUILayout.TextField("Select Your Character:", globalInfo.languages[i].selectYourCharacter);
 								globalInfo.languages[i].selectYourStage = EditorGUILayout.TextField("Select Your Stage:", globalInfo.languages[i].selectYourStage);
 								globalInfo.languages[i].round = EditorGUILayout.TextField("Round:", globalInfo.languages[i].round);
 								globalInfo.languages[i].finalRound = EditorGUILayout.TextField("Final Round:", globalInfo.languages[i].finalRound);
@@ -1827,6 +1828,17 @@ public class GlobalEditorWindow : EditorWindow {
                                         ScreenButton(globalInfo.gameGUI.creditsScreen);
                                     } EditorGUI.EndDisabledGroup();
                                 } EditorGUILayout.EndHorizontal();
+
+                                EditorGUILayout.BeginHorizontal();
+                                {
+                                    globalInfo.gameGUI.recordScreen = (RecordScreen)EditorGUILayout.ObjectField("Record:", globalInfo.gameGUI.recordScreen, typeof(RecordScreen), true);
+                                    EditorGUI.BeginDisabledGroup(DisableScreenButton(globalInfo.gameGUI.recordScreen));
+                                    {
+                                        ScreenButton(globalInfo.gameGUI.recordScreen);
+                                    }
+                                    EditorGUI.EndDisabledGroup();
+                                }
+                                EditorGUILayout.EndHorizontal();
 
                                 EditorGUILayout.Space();
 

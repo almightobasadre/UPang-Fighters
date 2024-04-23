@@ -54,5 +54,10 @@ namespace UFE3D
 		{
 			UFE.StartCreditsScreen();
 		}
-	}
+
+        public virtual void GoToRecordScreen()
+        {
+            UFE.StartRecordScreen();
+        }
+    }
 }

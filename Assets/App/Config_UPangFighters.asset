@@ -50,6 +50,7 @@ MonoBehaviour:
     start: Start
     options: Options
     credits: Credits
+    record: Record
     selectYourCharacter: Select Your Character
     selectYourStage: Select Your Stage
     round: Round %round%
@@ -95,6 +96,8 @@ MonoBehaviour:
     mainMenuScreen: {fileID: 11400002, guid: 5ae2a078222193e4ca9658f7044c53ad, type: 3}
     optionsScreen: {fileID: 11400056, guid: 2737f2cf99cd3416b9a9d13df2abbe04, type: 3}
     creditsScreen: {fileID: 11400010, guid: fcc5fd67387bedf468ccafeb42056c11, type: 3}
+    recordScreen: {fileID: 9036577706081055683, guid: d6d8db94a24897d469e00da4dc9fb00a,
+      type: 3}
     pauseScreen: {fileID: 11400000, guid: 6241d31f6482b42a88a8e7c8b62e2716, type: 3}
     characterSelectionScreen: {fileID: 11400026, guid: 044e38aaf7ac94e0fa12cf4125faf378,
       type: 3}
@@ -239,6 +242,7 @@ MonoBehaviour:
     start: Start
     options: Options
     credits: Credits
+    record: Record
     selectYourCharacter: Select Your Character
     selectYourStage: Select Your Stage
     round: Round %round%
@@ -335,7 +339,7 @@ MonoBehaviour:
     totalRounds: 3
     hasTimer: 1
     _timer:
-      _serializedValue: 425201762304
+      _serializedValue: 193273528320
     _timerSpeed:
       _serializedValue: 429496729600
     _p1XPosition:
@@ -877,7 +881,7 @@ MonoBehaviour:
     inputViewerIcon6: {fileID: 2800000, guid: 90523496d8897124e989ad256f109d27, type: 3}
   - inputType: 1
     inputButtonName: P1KeyboardVertical
-    engineRelatedButton: 2
+    engineRelatedButton: 3
     joystickAxisName: P1JoystickVertical
     cInputPositiveKeyName: P1Up
     cInputPositiveDefaultKey: W
@@ -1006,7 +1010,7 @@ MonoBehaviour:
   player2_Inputs:
   - inputType: 0
     inputButtonName: P2KeyboardHorizontal
-    engineRelatedButton: 0
+    engineRelatedButton: 1
     joystickAxisName: P2JoystickHorizontal
     cInputPositiveKeyName: P2Right
     cInputPositiveDefaultKey: RightArrow
