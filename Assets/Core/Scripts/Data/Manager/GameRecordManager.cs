@@ -30,7 +30,7 @@ public class GameRecordManager : MonoBehaviour
         int wins = PlayerPrefs.GetInt("Wins", 0);
         int losses = PlayerPrefs.GetInt("Loss", 0);
 
-        winText.text = "Wins: " + wins;
-        lossText.text = "Losses: " + losses;
+        winText.text = " " + wins;
+        lossText.text = " " + losses;
     }
 }
