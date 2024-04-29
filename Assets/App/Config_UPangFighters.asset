@@ -1513,7 +1513,7 @@ MonoBehaviour:
     displayInputsStoryMode: 0
     displayInputsChallengeMode: 1
     p1DebugInfo:
-      toggle: 1
+      toggle: 0
       currentMove: 1
       position: 1
       lifePoints: 1
